@@ -1,0 +1,79 @@
+.reviews {
+	padding-bottom: 125px;
+	position: relative;
+
+	&_slider {
+		margin-top: 67px;
+	}
+
+	&__slider-line {
+		display: flex;
+		gap: 80px;
+		overflow: hidden;
+	}
+
+	&__slider-item {
+		min-width: 1160px;
+		display: flex;
+		gap: 100px;
+	}
+
+	.reviews__box {
+
+		&-text {
+			max-width: 573px;
+			line-height: 45px;
+			letter-spacing: 0.7px;
+			margin-top: 75px;
+			margin-bottom: 81px;
+			position: relative;
+
+			&::before {
+				content: url(@/assets/commas_top.svg);
+				position: absolute;
+				top: -8px;
+				left: -40px;
+			}
+
+			&::after {
+				content: url(@/assets/commas_bottom.svg);
+				position: absolute;
+				bottom: -24px;
+				right: -15px;
+			}
+		}
+
+		&-name {
+			font-size: 20px;
+			color: $orange;
+			font-weight: 700;
+		}
+
+		&-subtitle {
+			color: #AAAAAA;
+			font-size: 14px;
+			margin-top: 11px;
+		}
+	}
+
+}
+
+
+.slider-btn {
+	position: absolute;
+	bottom: 208px;
+	right: 457px;
+
+	path {
+		transition: .3s ease;
+	}
+
+	&:hover>svg path {
+		transition: .3s ease;
+		stroke: $orange;
+	}
+}
+
+.slider-btn-prev {
+	margin-right: 74px;
+}

@@ -1,0 +1,40 @@
+.hero {
+	background-image: url(@/assets/hero-img.png);
+	background-repeat: no-repeat;
+	background-position: center right 300px;
+	background-size: auto;
+
+
+	&__inner {
+		min-height: calc(100vh - 110px);
+	}
+
+	&__title {
+		padding-top: 222px;
+		max-width: 530px;
+		font-size: 66px;
+		font-weight: 700;
+		margin-bottom: 33px;
+		line-height: 78px;
+	}
+
+	&__text {
+		max-width: 513px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+
+.box__info {
+	margin-top: 44px;
+
+	&-btn {
+		padding: 13px 21px;
+		margin-right: 29px;
+	}
+
+	&-link {
+		text-decoration: underline;
+	}
+}

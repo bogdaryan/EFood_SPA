@@ -1,0 +1,73 @@
+.delivery {
+
+	&__inner {
+		min-height: 100vh;
+		background-image: url(@/assets/food-delivery.png);
+		background-repeat: no-repeat;
+		background-position: center left;
+		background-size: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+	}
+
+	&__title {
+		margin-top: 250px;
+		max-width: 384px;
+		line-height: 50px;
+		text-align: inherit;
+	}
+
+	&__text {
+		max-width: 450px;
+		margin-top: 30px;
+		margin-bottom: 32px;
+		line-height: 30px;
+	}
+
+
+	.delivery__desc {
+		display: flex;
+		flex-direction: column;
+		gap: 21px;
+
+		&-item-1 {
+			position: relative;
+
+			&:before {
+				content: 'Fasted Delivery in 30 Minutes';
+				position: absolute;
+				right: 124px;
+				font-style: italic;
+
+			}
+		}
+
+
+
+		&-item {
+			display: flex;
+			align-items: center;
+			gap: 26px;
+		}
+
+		&-img {
+			width: 35px;
+		}
+
+
+		&-text {
+			text-transform: capitalize;
+		}
+	}
+
+	&__btn {
+		display: inline-block;
+		padding: 17px 44px;
+		margin-top: 66px;
+		border-radius: 30px 30px 1px 30px;
+	}
+
+
+
+}
