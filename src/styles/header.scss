@@ -36,6 +36,10 @@
 			transition: color .3s ease;
 		}
 	}
+
+	&__link--active {
+		color: $orange;
+	}
 }
 
 .form {
@@ -43,22 +47,36 @@
 
 	&__img {
 		cursor: pointer;
+		position: relative;
+		z-index: 999;
 	}
 
 	&__input {
 		height: 50px;
 		width: 350px;
 		position: absolute;
-		right: 30px;
+		right: -15px;
 		top: -10px;
 		display: none;
+		border-radius: 50px;
+		outline: none;
+		border: none;
+		box-shadow: 0 7px 20px 0 rgba(34, 60, 80, 0.2);
+		padding-right: 45px;
+		padding-left: 30px;
 	}
+
+	&__input--active {
+		display: block !important;
+		animation: input .5s linear;
+	}
+
 
 }
 
 .search__result {
 	width: 350px;
-	background: wheat;
+	background: white;
 	border-radius: 5px;
 	flex-direction: column;
 	gap: 25px;
@@ -70,8 +88,11 @@
 	transition: opacity .4s ease;
 	position: absolute;
 	display: flex;
-	right: 0;
+	right: -15px;
 	top: 50px;
+	box-shadow: 0 7px 20px 0 rgba(34, 60, 80, 0.2);
+	border-radius: 20px;
+	animation: search__resul .4s linear;
 }
 
 .search__result-item {
@@ -87,25 +108,25 @@
 }
 
 .basket span {
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	color: white;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	background: $orange;
-	position: absolute;
-	top: -8px;
-	right: -11px;
-
+	display: none;
 }
 
-.basket:focus+.basket__list,
-.basket:hover+.basket__list {
-	display: flex;
+.basket--on {
+	span {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		color: white;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		background: $orange;
+		position: absolute;
+		top: -8px;
+		right: -11px;
+	}
 }
 
 .basket__list {
@@ -120,6 +141,10 @@
 	transition: opacity .3s ease;
 	box-shadow: 4px 4px 37px -28px rgba(34, 60, 80, 1);
 	background-color: white;
+}
+
+.basket__list--active {
+	display: flex;
 }
 
 .basket__item {

@@ -1,6 +1,5 @@
 import React from "react";
 import '@styles/index.scss'
-
 import Header from "@/components/Header/Header.jsx";
 import Hero from "@/components/Hero/Hero.jsx";
 import Category from "@/components/Category/Category.jsx";

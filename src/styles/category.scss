@@ -21,14 +21,23 @@
 			cursor: pointer;
 			padding: 5px 0;
 
-			&:hover>img {
-				transition: .3s ease;
-				filter: invert(100%);
-			}
-
 			&:hover {
 				background-color: $orange;
-				color: white
+				color: white;
+
+				path {
+					fill: white !important;
+					transition: .3s ease;
+				}
+			}
+		}
+
+		&-item--active {
+			background-color: $orange;
+			color: white;
+
+			path {
+				fill: white !important;
 			}
 		}
 	}
@@ -39,7 +48,6 @@
 		position: relative;
 		display: flex !important;
 		gap: 30px !important;
-
 
 		&-item {
 			background: white;
@@ -77,6 +85,4 @@
 			box-shadow: unset !important;
 		}
 	}
-
-
 }

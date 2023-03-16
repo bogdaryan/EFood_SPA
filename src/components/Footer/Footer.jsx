@@ -78,9 +78,9 @@ export default class Footer extends React.PureComponent {
 					<div className="footer__bottom">
 						<p>© 2023 EFood - All rights reserved.</p>
 						<ul className="footer__bottom-list" >
-							<li className="footer__bottom-item" >Privacy</li>
-							<li className="footer__bottom-item" >Security</li>
-							<li className="footer__bottom-item" >Terms</li>
+							<li className="footer__bottom-item" ><a href="#">Privacy</a></li>
+							<li className="footer__bottom-item" ><a href="#">Security</a></li>
+							<li className="footer__bottom-item" ><a href="#">Terms</a></li>
 						</ul>
 					</div>
 				</div>
