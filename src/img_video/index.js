@@ -1,10 +1,5 @@
 import search from '@assets/search.svg'
 import basket from '@assets/basket.svg'
-import pizza from '@assets/pizza.svg'
-import sandwich from '@assets/sandwich.svg'
-import asian from '@assets/asian.svg'
-import setmenu from '@assets/setmenu.svg'
-import burger_tab from '@assets/burger.svg'
 import rating_stars from '@assets/rating-stars.svg'
 import burger_1 from '@assets/burger_1.png'
 import burger_2 from '@assets/burger_2.png'
@@ -37,11 +32,6 @@ import pinterest from '@assets/pinterest.svg'
 export {
 	search,
 	basket,
-	pizza,
-	sandwich,
-	asian,
-	setmenu,
-	burger_tab,
 	rating_stars,
 	burger_1,
 	burger_2,

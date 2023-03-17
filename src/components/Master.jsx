@@ -10,24 +10,21 @@ import Reviews from "@/components/Reviews/Reviews.jsx";
 import Subscribe from "@/components/Subscribe/Subscribe.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
 
-
-export default class Master extends React.PureComponent {
-	render() {
-		return (
-			<>
-				<Header />
-				<main>
-					<Hero />
-					<Category />
-					<FoodDelivery />
-					<Restaurants />
-					<Download />
-					<Reviews />
-					<Subscribe />
-					<Footer />
-				</main>
-			</>
-		);
-	}
+export default function Master() {
+	return (
+		<>
+			<Header />
+			<main>
+				<Hero />
+				<Category />
+				<FoodDelivery />
+				<Restaurants />
+				<Download />
+				<Reviews />
+				<Subscribe />
+				<Footer />
+			</main>
+		</>
+	);
 }
 
